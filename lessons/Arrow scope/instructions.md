@@ -1,0 +1,1 @@
+The following code doesn't behave as expected. We want it to log `Hendrik greets frikkie`, but it logs `greets frikkie`. This can be easily solved by using the arrow syntax for the callback function we are passing to the forEach function of the array.

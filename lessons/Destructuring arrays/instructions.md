@@ -1,0 +1,1 @@
+Change this code to use array destructuring to assign the `one` with the first element of `arr` and `two` with the second element of `arr`

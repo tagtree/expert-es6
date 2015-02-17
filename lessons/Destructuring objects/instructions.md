@@ -1,0 +1,1 @@
+Use object destructuring below to assign the values of both the `theName` and `theSurname` variables from the corresponding attributes of the `person` object.

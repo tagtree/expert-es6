@@ -1,0 +1,1 @@
+Currently x is being written to the console as 18. We want the x outside of the loop to remain 999. Fix this by using let.

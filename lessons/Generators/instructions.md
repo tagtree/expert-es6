@@ -1,0 +1,1 @@
+Adapt the following function to be a generator which returns the value of `i` as it increments.

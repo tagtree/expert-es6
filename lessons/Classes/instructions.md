@@ -1,0 +1,1 @@
+Add a method onto the `Person` class with the name `sayBye` which works exactly like the `sayHello` function, but instead says `bye`. For example, if we call it with the name `Hendrik`, it needs to return `bye Hendrik`.

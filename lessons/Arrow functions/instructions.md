@@ -1,0 +1,1 @@
+Change the square function to use the ES6 arrow syntax
