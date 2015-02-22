@@ -7,7 +7,7 @@ With ES6 we have a new keyword available called `class`. To define a class is ac
 
 	}
 
-But how useful is a class if you don't have any functionality on it? I'd say as useful as Captain Hook at a gynaecologists convention. I got that from the internet.. Let's add some functionality to this class. To add a function, just plonk in the function name, it's arguments, and it's body. The beauty is that it will automatically wire up the `recordSales` function to the  `Album` class scope!
+But how useful is a class if you don't have any functionality on it? As useful as a chocolate teapot. I got that from the internet.. Let's add some functionality to this class. To add a function, just plonk in the function name, it's arguments, and it's body. The beauty is that it will automatically wire up the `recordSales` function to the  `Album` class scope!
 
 ####Adding a function to the class
 	class Album {
@@ -47,5 +47,3 @@ For that we should create a constructor for the class. To do that we just add a 
 	console.log(album.sales);
 
 	//output: 55
-
-
