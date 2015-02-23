@@ -1,6 +1,6 @@
 Destructuring is also available for objects.
 
-Let's say that you've got an object and want to assign variables from specific attributes on that object. We do this quite a lot where we work with functions that have a signle argument which we need to explode to different variables.
+Let's say that you've got an object and want to assign variables from specific attributes on that object. We do this quite a lot where we work with functions that have a single argument which we need to explode to different variables.
 
 By the way, it's a good idea to code up functions in this manner, having one argument which you explode into multiple variables, because it's easier to maintain down the line. Just saying...
 
@@ -40,5 +40,3 @@ It's obviously way more useful when you have a bunch of variables which you woul
 	sayHello({firstName: 'Hendrik', lastName: 'Swanepoel', message: 'Hi there '});
 
 	//output: Hi there Hendrik Swanepoel
-
-
