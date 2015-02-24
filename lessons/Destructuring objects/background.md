@@ -24,7 +24,7 @@ To start object destructuring, we use the literal syntax `{}` on the left. Notic
 ####The left hand of the destructuring assignment
 	var {firstName: name} =
 
-The right hand of the assignment is quite simple, you just need to provide an object that contains the data you want exploded to different variables.
+The right hand-side of the assignment is quite simple, you just need to provide an object that contains the data you want exploded into different variables.
 
 ####Adding the right hand of the destructuring assignment
 	var {firstName: name} = {firstName: 'Hendrik'}
