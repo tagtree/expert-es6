@@ -1,7 +1,5 @@
 Arrow functions `=>` are much more succinct and easier on the eye than traditional functions. This is very useful, because we work with functions a lot in JS, especially when we use anonymous functions for callbacks and functional libraries like underscore. Not only do they take up less space, but they also solve scope issues that have puzzled JS developers for years.
 
-Test 3
-
 To define an arrow function, you need to:
 
 1. Provide a parameter list
