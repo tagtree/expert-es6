@@ -38,4 +38,4 @@ To model a class based on this one, we extend it using the extends keyword. As y
 		}
 	}
 
-let myBall = new RugbyBall('brown')
+	let myBall = new RugbyBall('brown')
