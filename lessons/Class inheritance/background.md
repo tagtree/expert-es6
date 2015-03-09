@@ -4,6 +4,10 @@ To do inheritance in ES6 we use the `extends` keyword. Let's start with a class 
 
 ####A simple class
 	class Ball{
+		constructor(colour){
+			this.colour = colour
+		}
+		
 		getShape(){
 			return "round";
 		}
@@ -13,10 +17,14 @@ To do inheritance in ES6 we use the `extends` keyword. Let's start with a class 
 		}
 	}
 
-To model a class based on this one, we extend it using the extends keyword. As you'll notice, with the right condition the `kick` function calls the `super` function. This is very important. The super keyword allows you to call the corresponding function on the class you are extending, in this case it calls the `kick` function definition on the base class `Ball`.
+To model a class based on this one, we extend it using the extends keyword. As you'll notice, with the right condition the `kick` function calls the `super` function. This is very important. The super keyword allows you to call the corresponding function on the class you are extending. This can be for instance the constructor function or any other method defined on the base class ´Ball´.
 
 ####Introducing extends
 	class RugbyBall extends Ball{
+		constructor(colour){
+			super(colour);
+		}
+		
 		getShape(){
 			return "oval";
 		}
@@ -29,3 +37,5 @@ To model a class based on this one, we extend it using the extends keyword. As y
 			}
 		}
 	}
+
+let myBall = new RugbyBall('brown')
