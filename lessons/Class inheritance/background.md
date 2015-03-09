@@ -17,7 +17,7 @@ To do inheritance in ES6 we use the `extends` keyword. Let's start with a class 
 		}
 	}
 
-To model a class based on this one, we extend it using the extends keyword. As you'll notice, with the right condition the `kick` function calls the `super` function. This is very important. The super keyword allows you to call the corresponding function on the class you are extending. This can be for instance the constructor function or any other function defined on the base class ´Ball´.
+To model a class based on this one, we extend it using the extends keyword. As you'll notice, with the right condition the `kick` function calls the `super` function. This is very important. The super keyword allows you to call the corresponding function on the class you are extending. This can be for instance the constructor function or any other method defined on the base class ´Ball´.
 
 ####Introducing extends
 	class RugbyBall extends Ball{
