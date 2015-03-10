@@ -5,6 +5,7 @@ In traditional functions, `this` points to the enclosing function's scope. To il
 ####A simple function using this
 	function sayHello(){
 		this.name = 'hendrik';
+		
 		console.log('hello ' + this.name);
 	}
 
@@ -17,6 +18,7 @@ Now let's add a nested function (passed to setTimeout), and still try to access 
 
 	function sayHello(){
 		this.name = 'hendrik';
+		
 		setTimeout(function(){
 			console.log('hello ' + this.name);
 		}, 1500);
@@ -32,7 +34,9 @@ We get the `TypeError` because the anonymous function we passed to the setTimeou
 
 	function sayHello(){
 		var _this = this;
+		
 		this.name = 'hendrik';
+		
 		setTimeout(function(){
 			console.log('hello ' + _this.name);
 		}, 1500);
@@ -47,6 +51,7 @@ Now with arrow functions `=>` the nested function is hooked up to it's parent sc
 
 	function sayHello(){
 		this.name = 'hendrik';
+		
 		setTimeout(()=>{
 			console.log('hello ' + this.name);
 		}, 1500);
