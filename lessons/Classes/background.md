@@ -25,7 +25,7 @@ To get an instance of this class, we use the `new` keyword, which isn't.. ahem..
 		}
 	}
 
-	var album = new Album();
+	let album = new Album();
 
 Okay so we've got an instance. But what about the `this.sales`, where does that get intialized?
 For that we should create a constructor for the class. To do that we just add a function to the class with the name of `constructor`. With ES6, this will always be called as a result of the initialization of a class (`new`). Note that we can pass values to the constructor as part of the `new` statement.
@@ -42,8 +42,10 @@ For that we should create a constructor for the class. To do that we just add a 
 		}
 	}
 
-	var album = new Album(50);
+	let album = new Album(50);
+	
 	album.recordSales(5);
+	
 	console.log(album.sales);
 
 	//output: 55
