@@ -33,7 +33,7 @@ We get the `TypeError` because the anonymous function we passed to the setTimeou
 ####Some old school voodoo to get around the problem - Eeeeuwww
 
 	function sayHello(){
-		let _this = this;
+		var _this = this;
 		
 		this.name = 'hendrik';
 		
