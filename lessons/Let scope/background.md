@@ -31,7 +31,7 @@ And now in the same file, we have some code which we want to execute in a loop s
 
 See what's wrong here? The last console.log spit out `Alice`, because we overwrote the `name` variable in the `for` loop.
 
-If we use `let`, instead of `var` for the variables, it takes the enclosing braces `{}` of the `for` loop as a new scope, and the inner variable doesn't overwrite the outer variable. We don't even need to use let for all variables, using it only in the for loop gets around the problem. This means that your code will play well with other libraries, even if they didn't use `let`.
+If we use `let`, instead of `var` for the variables, it takes the enclosing braces `{}` of the `for` loop as a new scope, and the inner variable doesn't overwrite the outer variable. We don't even need to use let for all variables, using it only in the for loop gets around the problem. This means that your code will play well with other libraries, even if they didn't use `let`. But theoretically, in your es6 code `let` is superior over `var`. To quote Douglas Crockfords T-Shirt: "let var die".
 
 ####Using the let keyword
 	var name = 'Fido';
@@ -39,7 +39,7 @@ If we use `let`, instead of `var` for the variables, it takes the enclosing brac
 	var owners = ['Hendrik', 'Alice'];
 
 	console.log(`${name} (${breed}):`);
-	for(var i = 0; i < owners.length; i++){
+	for(let i = 0; i < owners.length; i++){
 		let name = owners[i];
 		console.log('Owner ' + name);
 	}
