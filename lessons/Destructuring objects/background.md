@@ -6,9 +6,11 @@ By the way, it's a good idea to code up functions in this manner, having one arg
 
 ####Exploding args parameter into several variables
 	function sayHello(args){
-		var name = args.firstName;
-		var surname = args.lastName;
-		var message = args.message;
+		let 
+			name = args.firstName,
+			surname = args.lastName,
+			message = args.message
+		;
 
 		console.log(`${message} ${name} ${surname}`);
 	}
@@ -22,18 +24,19 @@ Okay, so destructuring of objects can come in very useful here. When we used des
 To start object destructuring, we use the literal syntax `{}` on the left. Notice that it looks just like an object. But the important part to notice is that the attribute part of the literal refers to the attribute name of the object we are going to destructure into variables, and that the 'value' part can by any valid variable name we want to be created and set with the value from the object.
 
 ####The left hand of the destructuring assignment
-	var {firstName: name} =
+	let {firstName: name} =
 
 The right hand-side of the assignment is quite simple, you just need to provide an object that contains the data you want exploded into different variables.
 
 ####Adding the right hand of the destructuring assignment
-	var {firstName: name} = {firstName: 'Hendrik'}
+	let {firstName: name} = {firstName: 'Hendrik'}
 
 It's obviously way more useful when you have a bunch of variables which you would like to explode, as in the above example where we had an `args` variable and we created 3 separate variables from it.
 
 ####The args example using destructuring
 	function sayHello(args){
-		var {firstName: name, lastName: surname, message: message} = args;
+		let {firstName: name, lastName: surname, message: message} = args;
+		
 		console.log(`${message} ${name} ${surname}`);
 	}
 
