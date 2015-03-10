@@ -14,7 +14,7 @@ Let's say we've got an array containing the values in the correct indexes, corre
 
 	}
 
-	var args = ['Thom', 'Yorke'];
+	let args = ['Thom', 'Yorke'];
 
 With ES6, we can map the values in the array to the parameters on the function with a quick shorthand, using the spread operator `...`
 
@@ -23,6 +23,6 @@ With ES6, we can map the values in the array to the parameters on the function w
 
 	}
 
-	var args = ['Thom', 'Yorke'];
+	let args = ['Thom', 'Yorke'];
 
 	sayHello(...args);
