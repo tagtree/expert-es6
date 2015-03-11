@@ -53,7 +53,7 @@ Now with arrow functions `=>` the nested function is hooked up to it's parent sc
 		this.name = 'hendrik';
 		
 		setTimeout(()=>{
-			console.log('hello ' + this.name);
+			console.log(`hello ${this.name}`);
 		}, 1500);
 	}
 
