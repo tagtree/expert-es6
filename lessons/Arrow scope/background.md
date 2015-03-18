@@ -35,7 +35,7 @@ We get the `TypeError` because the anonymous function we passed to the setTimeou
 	function sayHello(){
 		var _this = this;
 		
-		this.name = 'hendrik';
+		_this.name = 'hendrik';
 		
 		setTimeout(function(){
 			console.log('hello ' + _this.name);
