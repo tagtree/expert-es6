@@ -1,6 +1,6 @@
 Lots of coders are puzzled by the weird scope issues (`this`) they run into when coding in JS. Arrow function syntax alleviates the worst of these issues. Let's break down the problem bit by bit. 
 
-In traditional functions, `this` points to the enclosing function's scope. To illustrate the problem, we define a simple function first. 
+In traditional functions ( in strict mode ), `this` points to the enclosing function's scope. To illustrate the problem, we define a simple function first. 
 
 ####A simple function using this
 	function sayHello(){
