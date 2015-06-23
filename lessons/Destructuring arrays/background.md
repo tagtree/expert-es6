@@ -1,7 +1,7 @@
 We work a lot with arrays in JS. Often we just want to loop through them and do something, but sometimes we want to pull items out of arrays and assign them to variables. When we run into this, it results with code that looks something like this.
 
 ####Assigning variables from array items
-	let positions = ['Guy that won the race', 'Runner up', 'Third guy'];
+	let positions = ['Person that won the race', 'Runner up', 'Third person'];
 	
 	let winner  = positions[0];
 	
@@ -12,7 +12,7 @@ This code is fine, but it does take a while for a coder to read and parse what i
 Array destructuring is a bit of syntactic sugar that gives us a shorthand to assign variables from items in an array. The above example may be rewritten like this.
 
 ####Assigning with destructuring
-	let positions = ['Guy that won the race', 'Runner up', 'Third guy'];
+	let positions = ['Person that won the race', 'Runner up', 'Third person'];
 	
 	let [winner,runnerUp] = positions;
 
